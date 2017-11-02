@@ -14,7 +14,7 @@ composer require bpocallaghan/locations
 Register the routes in the `routes/vendor.php` file.
 - Admin
 ```bash
-Route::group(['prefix' => 'locations', 'namespace' => 'Locations'], function () {
+Route::group(['prefix' => 'general/locations', 'namespace' => 'Locations\Controllers\Admin'], function () {
     Route::resource('suburbs', 'SuburbsController');
     Route::resource('cities', 'CitiesController');
     Route::resource('provinces', 'ProvincesController');
@@ -36,7 +36,7 @@ This will copy the `models, views and controllers` to their respective directori
 Please note when you execute the above command. You need to update your `routes`.
 - Admin
 ```bash
-Route::group(['prefix' => 'general/locations', 'namespace' => 'Locations\Controllers\Admin'], function () {
+Route::group(['prefix' => 'locations', 'namespace' => 'Locations'], function () {
     Route::resource('suburbs', 'SuburbsController');
     Route::resource('cities', 'CitiesController');
     Route::resource('provinces', 'ProvincesController');
