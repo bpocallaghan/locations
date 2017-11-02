@@ -1,0 +1,36 @@
+{
+    "name": "bpocallaghan/locations",
+    "description": "Add countries, provinces, cities and suburbs to your laravel admin project - https://github.com/bpocallaghan/laravel-admin-starter",
+    "keywords": [
+        "laravel",
+        "admin",
+        "cms",
+        "locations",
+        "countries",
+        "provinces",
+        "cities",
+        "suburbs"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ben-Piet O'Callaghan",
+            "email": "bpocallaghan@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bpocallaghan\\Locations\\": "app/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bpocallaghan\\Locations\\LocationsServiceProvider"
+            ]
+        }
+    }
+}
